@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  margin: 54px 0 0;
+  font-family: 'Roboto', sans-serif;
+  color: #262626;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.forca-imagem>img {
+  width: 500px;
+  height: 500px;
+}
+
+.botao {
+  height: 75px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: Brush Script MT;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 25px;
+  background-color: #209920;
+  box-shadow: 1px 1px 5px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #209920 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.botao:hover {
+  background: #19ee05;
+  transition: background 1s;
+}
+
+.teclado {
+  width: auto;
+  height: 250px;
+  background-color: blue;
+}
+
+footer {
+  margin-left: 300px;
+  margin-right: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.botaoChutar {
+  margin-top: 25px;
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  color: #111010;
+  font-family: Brush Script MT;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 5px;
+  background-color: #dad5d5;
+  box-shadow: 1px 1px 5px 0 #000000;
+  border: solid #209920 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: cen
+}
+
+.botaoChutar:hover {
+  background: #bdb8b8;
+  ;
+  transition: background 1s;
+}
+
+footer>h1 {
+  vertical-align: middle;
+  line-height: 3.5;
+  font-size: 25px;
+}
+
+footer>input {
+  width: 250px;
+  height: 35px;
+  border: solid black 2px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
