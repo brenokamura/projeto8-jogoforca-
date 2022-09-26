@@ -46,7 +46,7 @@ height: auto;
 .forca-imagem>img {
   margin-top: 30px;
   width: 500px;
-  height: 500px;
+  height: 415px;
 }
 
 .teclado {
@@ -54,10 +54,10 @@ height: auto;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-right: 300px;
+  margin-right: 325px;
   margin-left: 450px;
   width: auto;
-  height: 150px;
+  height: 125px;
 }
 
 .letra {
