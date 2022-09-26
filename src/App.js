@@ -110,12 +110,12 @@ export default function App() {
     <div className="corpo">
       <div className="topo">
         <div className="forca-imagem">
-          <img src={imagemForca} />
+          <img data-identifier="game-image" src={imagemForca} />
         </div>
         <div className="botao">
-          <button lassName="botao-escolha"onClick={() => escolhaPalavra()}>Escolher Palavra</button>
+          <button data-identifier="choose-word" className="botao-escolha" onClick={() => escolhaPalavra()}>Escolher Palavra</button>
           <div className="palavraEscolhida">
-            {adivinharPalavra.map((letra) => <span className={jogo}>{letra}</span>)}
+            {adivinharPalavra.map((letra) => <span data-identifier="word" className={jogo}>{letra}</span>)}
           </div>
         </div>
       </div>
@@ -124,8 +124,8 @@ export default function App() {
       </div>
       <div className="footer">
         <label >Já sei a palavra!</label>
-        <input type="text" value={campoPalavra} disabled={!(jogo === "jogando")} onChange={(event) => setCampoPalavra(event.target.value)}></input>
-        <button disabled={!(jogo === "jogando")} onClick={() => adivinhaPalavra(campoPalavra.split(""))}>Chutar</button>
+        <input data-identifier="type-guess" type="text" value={campoPalavra} disabled={!(jogo === "jogando")} onChange={(event) => setCampoPalavra(event.target.value)}></input>
+        <button data-identifier="guess-button" disabled={!(jogo === "jogando")} onClick={() => adivinhaPalavra(campoPalavra.split(""))}>Chutar</button>
       </div>
     </div>
   )
