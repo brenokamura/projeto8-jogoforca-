@@ -2,26 +2,25 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #FAFAFA;
-  margin: 54px 0 0;
-  font-family: 'Roboto', sans-serif;
-  color: #262626;
-  font-weight: 400;
-  font-size: 14px;
+.corpo{
+width: auto;
+height: auto;
 }
-
-.topo {
+.topo{
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-.forca-imagem>img {
-  width: 500px;
-  height: 500px;
+.botao{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: flex-end;
+  height: inherit;
 }
 
-.botao {
+.botao button{
   height: 75px;
   border-radius: 5px;
   color: #FFFFFF;
@@ -39,13 +38,15 @@ body {
   text-align: center;
 }
 
-.botao:hover {
-  background: #19ee05;
-  transition: background 1s;
+.palavraEscolhida{
+  margin-top: 200px;
 }
 
-.botaoPointer {
-  pointer-events: none;
+
+.forca-imagem>img {
+  margin-top: 30px;
+  width: 500px;
+  height: 500px;
 }
 
 .teclado {
@@ -54,69 +55,70 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin-right: 300px;
-  margin-left: 400px;
+  margin-left: 450px;
   width: auto;
   height: 150px;
 }
 
-
-.letters {
-  width: 90px;
-}
-
-.letters button {
+.letra {
   margin: 1px 1px;
   font-weight: 700;
   font-size: 15px;
   background-color: #ad9d9d;
   border: none;
   border-radius: 5px;
-  width: 45px;
+  width: 55px;
   height: 35px;
 }
 
-footer {
-  margin-left: 300px;
-  margin-right: 300px;
+.letra:disabled{
+  background-color: #9099a1;
+  color: #b7b8b9;
+}
+
+.footer{
+  max-width: 400px;
+  margin: 12px auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.botaoChutar {
-  margin-top: 25px;
-  height: 40px;
-  width: 150px;
-  border-radius: 5px;
-  color: #111010;
-  font-family: Brush Script MT;
-  font-size: 25px;
-  font-weight: 100;
-  padding: 5px;
-  background-color: #dad5d5;
-  box-shadow: 1px 1px 5px 0 #000000;
-  border: solid #209920 1px;
-  text-decoration: none;
-  display: inline-block;
+.footer button{
+  border: 1px solid #74808a;
   cursor: pointer;
-  text-align: cen
+  height: 30px;
+  width: 70px;
+  background-color: #dad5d5;
+  color: #111010;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px; 
 }
 
-.botaoChutar:hover {
-  background: #bdb8b8;
-  ;
-  transition: background 1s;
+.footer button:disabled{
+  background-color: #9faab5;
+  color: #79818a;
 }
 
-footer>h1 {
-  vertical-align: middle;
-  line-height: 3.5;
-  font-size: 25px;
+.footer label{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
 }
 
-footer>input {
-  width: 250px;
-  height: 35px;
-  border: solid black 2px;
-  border-radius: 5px;
-  margin-top: 25px;
+.jogando{
+  margin: 1px;
+  font-size: 45px;
+}
+
+.ganhei{
+  font-size: 45px;
+  font-weight: bold;
+  color:#31be0e;
+}
+
+.derrota{
+  font-size: 45px;
+  font-weight: bold;
+  color:#c70d0d;
 }
