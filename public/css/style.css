@@ -111,14 +111,15 @@ height: auto;
   font-size: 45px;
 }
 
+.derrota{
+  font-size: 45px;
+  font-weight: bold;
+  color:#c70d0d;
+}
+
 .ganhei{
   font-size: 45px;
   font-weight: bold;
   color:#31be0e;
 }
 
-.derrota{
-  font-size: 45px;
-  font-weight: bold;
-  color:#c70d0d;
-}
